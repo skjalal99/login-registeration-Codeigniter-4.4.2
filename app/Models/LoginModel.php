@@ -8,13 +8,12 @@ class LoginModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'admin_users';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'admin_user_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields = [
-        'admin_user_id',
         'username',
         'password_hash',
         'full_name',

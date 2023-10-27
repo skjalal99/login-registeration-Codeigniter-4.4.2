@@ -34,6 +34,18 @@
                         <label for="password">Confirm Password</label>
                         <input type="password" name="confirmpassword" placeholder="Confirm Password"  class="form-control"  >
                     </div>
+                    <div class="form-group">
+                    <label for="password">Select Company</label>
+                        <select name="company"  class="form-control input-lg">
+                                <option value="">Select Company</option>
+                                <?php
+                                foreach($companies as $row)
+                                {
+                                    echo '<option value="'.$row["company_id"].'">'.$row["company_name"].'</option>';
+                                }
+                                ?>
+                        </select>
+                    </div>
                     <button type="submit" class="btn btn-primary login-btn btn-block">Register</button>
                 </form>
             </div>
